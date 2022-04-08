@@ -410,6 +410,7 @@ font-weight: bold;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   /* navbar css */
+ 
   .navbar-content {
     z-index: 1111;
     display: block;
@@ -422,6 +423,7 @@ font-weight: bold;
     transition: all 0.5s;
     text-align: center;
     margin-top: 10px;
+  
   }
   .navbar-content li {
     margin: 50px 0;
