@@ -91,19 +91,12 @@ line-height: 0px;
 }
 
  .hero-section {
-  background-image: linear-gradient(
-      90deg,
-      #fd5806d2,
-      #ee171bdc
-    ),
-    url(./Assets/header/top_img.png);
+  background-image: url(Assets/banner.png);
   height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-
-
 } 
 
 .hero-text{
@@ -207,35 +200,27 @@ line-height: 0px;
 
 /* fun facts css */
  .fun-facts {
-  background-color: #f0f3f6;
-  height: 670px;
+  background-image: url('/Assets/fun-ng.png');
+  height: 675px;
   position: relative;
+  background-position:center;
+
+  
 }
 
-.fun-img-left {
-  position: absolute;
-  left: 0;
-}
-.fun-img-right {
-  position: absolute;
-  right: 0;
-}
-
-
-.box-img{
+.box-img {
 position: absolute;
-top: 85px;
+top: 90px;
 left: 335px;
-z-index: 1;
+
 }
 .fun-texts{
-
+  position: relative;
   display: grid !important;
   grid-template-columns:repeat(3,1fr);
   gap: 50px;
   align-items: center;
   padding-top: 150px;
-  z-index: 5;
 }
 .first-texts h2{
   font-size: 48px;
@@ -245,7 +230,7 @@ z-index: 1;
 
 .details-card {
   text-align: left;
-  width: 1025px;
+  width: 1200px;
   height: 150px;
   display: flex;
   background-color: white;
@@ -255,16 +240,11 @@ z-index: 1;
   right: 0;
   padding-left: 50px;
   border-radius: 7px;
-  margin-top: 45px;
-}
-.details-card-item {
-  
-}
 
+}
 .img-opacity {
   opacity: 0.6;
 }
-
 .details-card-item h3 {
   font-size: 48px;
   font-weight: bold;
@@ -275,6 +255,96 @@ z-index: 1;
   font-size: 18px;
 }
 
+
+/* gallery section */
+.gallery-section{
+position: relative;
+}
+.gallrey-img{
+  position: absolute;
+  top: 100px;
+  left: 17%;
+}
+.gallery-cards{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  padding-top: 160px;
+  padding-bottom: 150px;
+}
+.card h1{
+  font-size: 48px;
+  line-height: 55px;
+}
+.card h2{
+  font-size: 24px;
+}
+.mail{
+  padding-top: 80px;
+  padding-left: 20px;
+}
+
+.counter-section{
+  background-image: url(Assets/counter-bg.png);
+  height: 420px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.counters {
+  display: flex;
+  justify-content: space-between;
+
+}
+.counter-man img{
+  position: absolute;
+  top: -50px;
+}
+.counter-flex{
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.counter-number{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+}
+.counter-text{
+  margin-bottom: 35px;
+}
+.numbers h1{
+font-size: 64px;
+line-height: 60px;
+}
+.numbers p{
+color: #f94743;
+font-weight: bold;
+}
+
+.dot{
+  color: #f94743;
+  font-size: 36px;
+}
+
+.counter-btn{
+  background: linear-gradient(
+    90deg,
+    rgba(249, 71, 67, 1) 0%,
+    rgba(227, 85, 30, 1) 35%,
+    rgb(240, 119, 54) 100%
+  );
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  border: 0;
+  padding: 20px 30px;
+  gap: 10px;
+  color: white;
+  border-radius: 5px;
+ font-size: 16px;
+}
 /*
 
 .counters {
