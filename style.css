@@ -76,8 +76,6 @@ line-height: 0px;
 #check {
   display: none;
 }
-
-
 .apps{
   color: #f94f41;
   font-size: 30px;
@@ -148,6 +146,7 @@ line-height: 0px;
   background-color: black;
   font-size: 16px;
   color: white;
+  box-shadow:10px 10px 15px 0px #C84308 ;
 }
 .flex p{
   display: flex;
@@ -233,7 +232,7 @@ left: 335px;
   right: 0;
   padding-left: 50px;
   border-radius: 7px;
-
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .img-opacity {
   opacity: 0.6;
@@ -337,6 +336,8 @@ font-weight: bold;
   color: white;
   border-radius: 5px;
  font-size: 16px;
+ box-shadow:10px 10px 15px 0px #EFD0D2 ;
+
 }
 
 /* !!!!!!!!!!!!!! Extra small devices !!!!!!!!!!!! */
