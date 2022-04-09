@@ -16,26 +16,8 @@ a {
   margin: 0 auto;
   padding: 16px;
 }
-.checkbtn {
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-}
 
-#check {
-  display: none;
-}
-a.active,
-a:hover {
-  color: #f94f41;
-  transition: 0.4s;
-}
-
-.apps{
-  color: #f94f41;
-  font-size: 30px;
-  cursor: pointer;
-}
+/* @@@@@@@@@@@@@@ Navbar section css @@@@@@@@@@@@@@@@@@@ */
 
 .navbar {
   display: flex;
@@ -55,14 +37,10 @@ a:hover {
   font-size: 18px;
   font-weight: bold;
 }
-
- .navbar-content li a::after{
-  content: "";
-  display: block;
-  width: 10px;
-  margin: 0 auto;
-  border-bottom: 4px dotted #f94743;
- 
+a.active,
+a:hover{
+  color: #f94743;
+  transition: 0.5s;
 }
 
 .navbar-content li a{
@@ -89,7 +67,24 @@ line-height: 0px;
   gap: 10px;
   box-shadow:10px 10px 15px 0px #FDC0BF ;
 }
+.checkBtn {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
 
+#check {
+  display: none;
+}
+
+
+.apps{
+  color: #f94f41;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* @@@@@@@@@@@@@@ Hero section css @@@@@@@@@@@@@@@@@@ */
  .hero-section {
   background-image: url(Assets/banner.png);
   height: 800px;
@@ -119,7 +114,7 @@ line-height: 0px;
 .place{
   font-size: 16px;
 }
-.hero-img{
+.speaker-img{
   position: absolute;
   right: 22%;
   bottom: -7px;
@@ -198,14 +193,12 @@ line-height: 0px;
 }
 
 
-/* fun facts css */
+/* @@@@@@@@@@@@@@@ Fun fact section css @@@@@@@@@@@@@@@@@@ */
  .fun-facts {
   background-image: url('/Assets/fun-ng.png');
   height: 675px;
   position: relative;
   background-position:center;
-
-  
 }
 
 .box-img {
@@ -256,11 +249,11 @@ left: 335px;
 }
 
 
-/* gallery section */
+/* @@@@@@@@@@@@@@@@@@ gallery section css @@@@@@@@@@@@@@@@@ */
 .gallery-section{
 position: relative;
 }
-.gallrey-img{
+.gallery-img{
   position: absolute;
   top: 100px;
   left: 17%;
@@ -288,8 +281,8 @@ position: relative;
 .counter-section{
   background-image: url(Assets/counter-bg.png);
   height: 420px;
-  margin-bottom: 100px;
   position: relative;
+  object-fit: cover;
 }
 .counters {
   display: flex;
@@ -345,72 +338,11 @@ font-weight: bold;
   border-radius: 5px;
  font-size: 16px;
 }
-/*
 
-.counters {
-  background-color: #f0f3f6;
-  height: 420px;
-  position: relative;
-  margin: 100px 0;
-}
+/* !!!!!!!!!!!!!! Extra small devices !!!!!!!!!!!! */
+@media only screen and (min-width: 200PX) and (max-width: 600px) {
 
-.counters-image {
-  position: absolute;
-  top: -60px;
-}
-
-.counters-img-left {
-  position: absolute;
-  left: 0;
-  height: 100%;
-}
-.counters-img-right {
-  position: absolute;
-  right: 0;
-  height: 100%;
-}
-
-.next-speaker {
-  width: 600px;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-}
-
-.next-speaker h2 {
-  padding-right: 30px;
-}
-.next-speaker button {
-  margin-top: 20px;
-}
-
-.counters-time {
-  display: flex;
-  align-items: center;
-
-  text-align: left;
-}
-
-.counters-time-item {
-  flex: 14%;
-}
-.counters-time-item h3 {
-  font-size: 60px;
-}
-.counters-time-item p {
-  color: #f94743;
-} */
-
-/* .colon-color {
-  color: #f94743;
-  font-weight: bold;
-  font-size: 25px;
-} */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  /* navbar css */
- 
+/* @@@@@@@@@@@@@ header section css @@@@@@@@@@@@@@@@ */
   .navbar-content {
     z-index: 1111;
     display: block;
@@ -434,7 +366,7 @@ font-weight: bold;
   #check:checked ~ ul {
     left: 0;
   }
-  .checkbtn {
+  .checkBtn {
     display: block;
     color: #f94f41;
   }
@@ -443,414 +375,407 @@ font-weight: bold;
    margin: 0 auto;
    box-shadow: none;
   }
-.apps{
+  .apps{
   display: none;
 }
-  /* Hero section  */
-  /* .hero-text {
-    padding-top: 100px;
-  }
 
-  .hero-text-wrapper {
-    text-align: center;
+/* @@@@@@@@@@@@@@@ Hero section css @@@@@@@@@@@@@@ */
+.hero-text{
+position: absolute;
+top: 5%;
   }
+ .shape-2, .shape-4, .shape-5, .shape-6, .g-image{
+  display: none;
+}
 
-  .hero-title {
-    font-size: 40px;
-  }
+.flex{
+  margin-top: 20px;
+  display: block;
+}
 
-  .hero-cart {
-    flex-direction: column;
-    justify-content: center;
-  }
+.sub-title{
+  font-size: 16px;
+}
+.hero-text h1{
+ font-size: 34px;
+ line-height: 40px;
+}
+.date{
+  font-size: 18px;
+}
+.place{
+  font-size: 14px;
+}
 
-  .speaker-img {
-    width: 130px;
-    right: 30%;
-  }
+.flex button{
+  padding: 15px 35px;
+  font-size: 14px;
+}
+.flex p{
+font-size: 14px;
+margin-top: 10px;
+}
 
-  .event-img {
-    width: 100%;
-  }
+.speaker-img img{
+  width: 150px;
+ margin-left: -200px;
 
-  .shape-img-2 {
-    top: 50px;
-  }
-  .shape-img-3 {
-    top: 60px;
-  }
-  .shape-img-6 {
-    left: 30%;
-  }
-  .shape-img-4,
-  .shape-img-5 {
-    display: none;
-  }
+}
+.event-img{
+  width: 100%;
+  left: 0;
+}
+.play{
+  left: 50%;
+   top: 40%;
+}
+.shape-3{
+top: 31%;
+left: 80%;
+}
 
-  /* fun fact section */
-  /* .fun-texts {
-    flex-direction: column;
-    gap: 0px;
-    padding-top: 30px;
-  }
+/* @@@@@@@@@@@@@ fun fact section css @@@@@@@@@@@@@@@ */
 
-  .fun-img-right {
-    display: none;
-  }
+.fun-texts{
+  grid-template-columns:repeat(1,1fr);
+  padding:20px;
+}
+.box-img img{
+ width: 100px !important;
+}
+.box-img{
+ left: 10px;
+ top: 70px;
+}
+.first-texts{
+margin-top: 50px;
+}
+.first-texts h2{
+font-size: 34px;
+line-height: 40px;
+}
+.second-texts p , .third-texts p{
+  font-size: 15px;
+}
+.details-card {
+  width: 95%;
+  margin: 0px  10px 0px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
-  .fun-img-left {
-    width: 100%;
-  }
+.details-card img {
+  display: none;
+}
+.details-card-item {
+  flex: 20%;
+}
+.details-card-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f94743;
+}
+.details-card-item p {
+  font-weight: bold;
+  font-size: 12px;
+}
 
-  .first-texts {
-    padding: 20px 10px 0 10px;
-  }
-  .second-texts {
-    padding: 20px 10px 0 10px;
-  }
+/* @@@@@@@@@@@@@@@ Gallery css @@@@@@@@@@@@@@@@@ */
+.gallery-cards{
+  grid-template-columns: repeat(1,1fr);
+  margin-left:50px ;
+}
+.gallery-img{
+  top: 100px;
+  left:20px;
+}
+.card h1{
+  font-size: 34px;
+  line-height: 40px;
+}
+.mail{
+  padding: 0;
+}
 
-  .details-card {
-    width: 390px;
-    height: 100px;
-    margin-top: 30px;
-    position: sticky;
-    margin: 30px auto;
-    border-radius: 7px;
-  }
+/* @@@@@@@@@@@@@@@@@ counter section css @@@@@@@@@@@@@@@@@@ */
+.counter-section{
+  height:500px;
+}
+.counter-man img{
+  width: 180px;
+  right: 25%;
+}
 
-  .details-card img {
-    display: none;
-  }
-  .details-card-item {
-    flex: 20%;
-  }
-  .details-card-item h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #f94743;
-  }
-  .details-card-item p {
-    font-weight: bold;
-    font-size: 12px;
-  }
+.counter-flex{
+  margin-top: 160px;
+}
+.counter-text h2{
+font-size: 18px;
+}
+.counter-number{
+ gap: 10px;
+}
+.numbers h1{
+font-size: 34px;
+}
+.counter-text{
+  margin-bottom: 5px;
+}
 
-  /* counters section  */
+.counter-btn{
+  padding:15px ;
+}
 
-  /* .counters-img-left {
-    display: none;
-  }
-  .counters-img-right {
-    width: 100%;
-  }
-
-  .next-speaker {
-    width: 390px;
-  }
-
-  .counters-image {
-    width: 150px;
-    right: 30%;
-  }
-
-  .next-speaker {
-    width: 300px;
-    top: 40%;
-    left: 15%;
-  }
-
-  .next-speaker h2 {
-    padding: 20px 10px 0 0;
-    font-size: 20px;
-  }
-  .next-speaker button {
-    margin-top: 0px;
-  }
-
-  .counters-time-item h3 {
-    font-size: 10px;
-  }
-  .counters-time-item p {
-    font-size: 10px;
-  }
-
-  .colon-color {
-    font-size: 10px;
-  }
-
-  .counters-time {
-    margin-bottom: 10px;
-  } */
-/* } */
-/* @media only screen and (max-width: 768px) {
- 
+}
+ /* !!!!!!!!!!!!!!!!!! TAblet mode !!!!!!!!!!!!!!!!!!!!!! */
+ @media only screen and (min-width: 600PX) and (max-width: 768px){
+  /* @@@@@@@@@@@@ Navbar section @@@@@@@@@ */
   .navbar-content {
     z-index: 1111;
     display: block;
     position: fixed;
     width: 100%;
-    height: 100vh;
-    background-color: rgb(115, 119, 122);
+    height: 700px;
+    background-color: #2EAB98;
     top: 80px;
-    left: -800px;
+    left: -1800px;
     transition: all 0.5s;
     text-align: center;
     margin-top: 10px;
+  
   }
   .navbar-content li {
     margin: 50px 0;
     display: block;
     line-height: 30px;
   }
-
   #check:checked ~ ul {
     left: 0;
   }
-  .checkbtn {
+  .checkBtn {
     display: block;
-  }
-
-  /* Hero section  */
-  /* .hero-text {
-    padding-top: 100px;
-  }
-
-  .hero-text-wrapper {
-    text-align: center;
-  }
-
-  .hero-title {
-    font-size: 40px;
-  }
-
-  .hero-cart {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .speaker-img {
-    width: 130px;
-    right: 10%;
-  }
-
-  .event-img {
-    width: 100%;
-  }
-
-  .shape-img-2 {
-    top: 50px;
-  }
-  .shape-img-3 {
-    top: 60px;
-  }
-  .shape-img-6 {
-    left: 30%;
-  }
-  .shape-img-4,
-  .shape-img-5 {
-    display: none;
-  }  */
-
-  /* fun fact section */
-/* 
-  .fun-facts{
-    height: 600px
-  }
-  .fun-texts {
-    flex-direction: column;
-    gap: 0px;
-    padding-top: 30px;
-  }
-
-  .fun-img-right {
-    display: none;
-  }
-
-  .first-texts {
-    padding: 20px 10px 0 10px;
-  }
-  .second-texts {
-    padding: 20px 10px 0 10px;
-  }
-
-  .details-card {
-    width: 390px;
-    height: 100px;
-    margin-top: 30px;
-    position: sticky;
-    margin: 30px auto;
-    border-radius: 7px;
-  }
-
-  .details-card img {
-    display: none;
-  }
-  .details-card-item {
-    flex: 20%;
-  }
-  .details-card-item h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #f94743;
-  }
-  .details-card-item p {
-    font-weight: bold;
-    font-size: 12px;
-  }
-
-  /* counters section  */
-/* 
-  .counters-img-left {
-    display: none;
-  }
-  .counters-img-right {
-    width: 100%;
-  }
-
-  .next-speaker {
-    width: 300px;
-  }
-
-  .next-speaker h2 {
-    padding: 20px 10px 0 0;
-    font-size: 20px;
-  }
-  .next-speaker button {
-    margin-top: 0px;
-  }
-
-  .counters-time-item h3 {
-    font-size: 10px;
-  }
-  .counters-time-item p {
-    font-size: 10px;
-  }
-
-  .colon-color {
-    font-size: 10px;
-  }
-
-  .counters-time {
-    margin-bottom: 10px;
-  }
-} */
-
-/* Large devices (laptops/desktops, 992px and up)  */
-/* @media only screen and (max-width: 992px) { */
-
-  /* navbar css */
-  /* .navbar-content {
-    z-index: 1111;
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(115, 119, 122);
-    top: 80px;
-    left: -1000px;
-    transition: all 0.5s;
-    text-align: center;
-    margin-top: 10px;
-  }
-  .navbar-content li {
-    margin: 50px 0;
-    display: block;
-    line-height: 30px;
+    color: #f94f41;
   }
 
   .navbar-btn{
-    margin: 0 auto;
+   margin: 0 auto;
+   box-shadow: none;
   }
+  .apps{
+   display: none;
+   }
 
-  #check:checked ~ ul {
-    left: 0;
-  }
-  .checkbtn {
+/* @@@@@@@@@@@@@@@@@ Hero section CSS @@@@@@@@@@@@@*/
+.hero-section{
+  height: 600px;
+
+}
+.hero-text{
+  position: absolute;
+  top:15%;
+    }
+  .flex{
+    margin-top: 20px;
     display: block;
   }
-
-  .next-speaker {
-    width: 300px;
+  
+  .hero-text h1{
+   font-size: 50px;
+ 
   }
-
-  .next-speaker h2 {
-    padding: 20px 10px 0 0;
+  .date{
     font-size: 20px;
   }
-  .next-speaker button {
-    margin-top: 0px;
+ 
+  .flex button{
+    padding: 15px 35px;
+    font-size: 15px;
   }
-
-  .counters-time-item h3 {
-    font-size: 20px;
+  .flex p{
+  margin-top: 10px;
   }
-  .counters-time-item p {
-    font-size: 10px;
+ 
+  .speaker-img img{
+   width: 200px;
+   margin-right: -150px;
+ 
   }
-
-  .colon-color {
-    font-size: 10px;
+  .event-img{
+    width: 100%;
+    left: 0;
   }
-
-  .counters-time {
-    margin-bottom: 10px;
+  .play{
+    left: 50%;
+    top: 40%;
+  }
+  .shape-3{
+  top: 31%;
+  left: 80%;
+  }
+  .shape-4{
+  top: 10%;
+  left: 70%;
+  }
+  .shape-5{
+   left: 8%;
+   bottom: 8%;
   }
   
-  .details-card {
-    width: 450px;
-    height: 100px;
-    margin-top: 30px;
-    position: sticky;
-    margin: 30px auto;
-    border-radius: 7px;
+  .shape-6{
+  display: none;
   }
+  .event-img{
+   width: 500px;
+ left: 35%;
+  }
+.g-image{
+  left: -60px;
+  top:-40px;
+}
 
-  .details-card img {
-    display: none;
-  }
-  .details-card-item {
-    flex: 20%;
-  }
-  .details-card-item h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #f94743;
-  }
-  .details-card-item p {
-    font-weight: bold;
-    font-size: 12px;
-  }
+/* @@@@@@@@@@@@@ fun fact section css @@@@@@@@@@@@@@@@ */
 
-} */
+.fun-texts{
+ grid-template-columns:repeat(1,1fr);
+ padding-left: 40px !important;
+ gap: 30px;
+ padding-top: 100px;
+}
+.box-img img{
+ width: 100px !important;
+}
+.box-img{
+ left: 20px;
+ top: 70px;
+}
 
-/* @media only screen and (MAX-width: 1200px) {
-  .next-speaker {
-    
-    width: 350px;
+.first-texts h2{
+font-size: 34px;
+line-height: 40px;
+}
 
-  }
+.details-card {
+  width: 90%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-right: 50px;
+  margin-top: 25px;
+}
 
-  
-  .next-speaker h2 {
-    padding: 20px 10px 0 0;
-    font-size: 20px;
-  }
-  .next-speaker button {
-    margin-top: 0px;
-  }
+.details-card img {
+  display: none;
+}
+.details-card-item {
+  flex: 25%;
+}
+.details-card-item h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f94743;
+}
+.details-card-item p {
+  font-weight: bold;
+  font-size: 16px;
+}
 
-  .counters-time-item h3 {
-    font-size: 10px;
-  }
-  .counters-time-item p {
-    font-size: 10px;
-  }
+/* @@@@@@@@@@@ Gallery css @@@@@@@@@@@@@@ */
+.gallery-cards{
+  grid-template-columns: repeat(3,1fr);
 
-  .colon-color {
-    font-size: 10px;
-  }
+}
+.card img{
+  width: 100%;
+}
+.gallery-img{
+left: 10px;
+top: 130px;
+}
+.card h1{
+font-size: 25px;
+line-height: 30px;
+}
+.photo{
+  font-size: 16px;
+}
 
-  .counters-time {
-    margin-bottom: 10px;
-  }
+/* @@@@@@@@@@@@@@ counter section css @@@@@@@@@@@@@@@@@@ */
+.counter-section{
+height: 300px;
+}
+.counter-man img{
+width:250px;
+left: 10%;
+}
 
-} */
+.counter-flex{
+padding: 0 ;
+
+}
+.counter-text h2{
+font-size: 20px;
+}
+.counter-number{
+gap: 10px;
+}
+.numbers h1{
+font-size: 40px;
+}
+.numbers p{
+  font-size: 16px;
+}
+.counter-btn{
+padding: 10px 15px;
+}
+
+ }
+
+ /* Large devices (laptops/desktops, 992px and up)  */
+@media only screen and (min-width:769px) and (max-width: 992px) {
+
+  .event-img{
+   left: 25%;
+  }
+  .speaker-img{
+    left: 70%;
+  }
+   .g-image{
+     top: -30px;
+     left: -100px;
+   }
+   .shape-4{
+     display: none;
+   }
+   .shape-6{
+   right: 20px;
+   }
+
+/* fan */
+
+.first-texts h2{
+  font-size: 34px;
+  line-height: normal;
+}
+.box-img{
+  left: 10px;
+}
+.details-card{
+  width: 90%;
+  margin-right: 50px;
+  bottom: 110px;
+  position: absolute;
+}
+
+
+/* @@@@@@@@@@@ Gallery css @@@@@@@@@@@@@@ */
+.gallery-cards{
+  grid-template-columns: repeat(3,1fr);
+
+}
+.card img{
+  width: 100%;
+}
+.gallery-img{
+left: 5px;
+}
+.numbers h1{
+  font-size: 35px;
+}
+}
